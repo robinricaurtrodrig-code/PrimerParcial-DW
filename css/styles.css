@@ -1,17 +1,93 @@
+:root{
+    /*pseudoelementos para crear variables personalizadas tambien conocidos como custom properties*/
+--blanco: #ffffff;
+--oscuro: #212121;
+--primario: #4682b4;
+--secundario: rgba(255,193,7,1);
+--gris: #757575;
+}
+
 html{
     font-size: 62.5%;
 }
 body{
     font-size: 16px;
+    font-family: sans-serif; /*colocarlo ahi para que aplique en todo*/
+    font-weight: 700;
 }
 /*1 rem = 10 px*/
+
+
 .titulo{
+    /*no iniciar con numero un class*/
     text-align: center;
     font-size: 3.8rem;
-    color: blue;
-}
-span{
-    font-size: 2rem;
-    color: grey;
+    color: var(--primario);
+    font-family: 'Times New Roman', Times, serif; /*FUENTE SEGURAS*/
 }
 
+.titulo span{
+    font-size: 2rem;
+    color: var(--secundario);
+}
+
+.contenedor{
+    width: 120rem;
+    margin-top: 0rem;
+    margin-right: auto;
+    margin-bottom: 0rem;
+    margin-left:  auto;
+    /*marguin: 0 auto 0 auto; */
+}
+
+.nav-bg{
+ background-color: var(--secundario);
+}
+
+.navegacion-principal {
+    display: flex;
+    flex-direction: column; /*Por defecto es row*/
+    /*align-items: center; el jsutify de columns*/
+}
+
+@media (min-width: 780px){
+
+}
+
+@media (min-width: 768px){
+    .navegacion-principal{
+        flex-direction: row;
+    
+    }
+}
+
+@media (min-width: 1140px){
+
+}
+
+@media (min-width: 1400x){
+
+}
+
+.navegacion-principal a {
+    /*background-color: var(--primario);
+    display: inline;*/
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold
+
+}
+
+.navegacion-principal{
+background-color: var(--primario);
+color: var(--oscuro)
+}
+
+.hero{
+    background-image: url(../imagenes/Recurso1.png");
+    background-rep
+}
